@@ -1,0 +1,19 @@
+// zestaw atrybutow ktorego chcemy uzywac w wieu miejscach
+
+@mixin center-block{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+// mixin z uzyciem zmiennych - parametrów
+@mixin border-radius($radius){
+    -o-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -mozilla-border-radius: $radius;
+    border-radius: $radius;
+}

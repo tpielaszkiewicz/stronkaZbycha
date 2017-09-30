@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+@media screen and (max-width: 767px) {
+    .navbar-default {
+        background-color: $color-white-light;
+    }
+    #o-nas {
+        .row{
+            margin: 15px 0px;
+        }
+        
+        .kolumna {
+            p,
+            h4 {
+                text-align: center;
+            }
+            
+            .img-cont{
+                width: 100%;
+            }
+        }
+    }
+    footer{
+        padding: 5px 0;
+    }
+}

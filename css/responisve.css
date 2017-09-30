@@ -1,0 +1,22 @@
+@media screen and (max-width: 767px) {
+    .navbar-default {
+        background-color: #F0F0F0;
+    }
+
+    #o-nas .row {
+        margin: 15px 0px;
+    }
+
+    #o-nas .kolumna p,
+  #o-nas .kolumna h4 {
+        text-align: center;
+    }
+
+    #o-nas .kolumna .img-cont {
+        width: 100%;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+}
