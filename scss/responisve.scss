@@ -4,23 +4,27 @@
     .navbar-default {
         background-color: $color-white-light;
     }
+    #header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/header/27285334-civil-engineering-wallpapers.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
     #o-nas {
-        .row{
+        .row {
             margin: 15px 0px;
         }
-        
         .kolumna {
             p,
             h4 {
                 text-align: center;
             }
-            
-            .img-cont{
+            .img-cont {
                 width: 100%;
             }
         }
     }
-    footer{
+    footer {
         padding: 5px 0;
     }
 }

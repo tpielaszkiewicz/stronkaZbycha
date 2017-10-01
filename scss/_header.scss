@@ -1,0 +1,35 @@
+//podpinamy plik ze zmiennymi
+@import "variables";
+@import "mixins";
+
+#header {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/header/27285334-civil-engineering-wallpapers.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    #header-cont {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1,
+        h2 {
+            color: $color-white-light;
+            font-family: 'Roboto Slab', sans-serif;
+            margin-bottom: 30px;
+        }
+        .btn-info {
+            transition: all 0.5s;
+            font-weight: $font-bold;
+            &:hover {
+                color: $color-blue-dark;
+                background-color: $color-white-light;
+                border-color: $color-white-light;
+            }
+        }
+    }
+}

@@ -93,7 +93,7 @@
 
 #o-nas h3,
   #o-nas p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -118,7 +118,7 @@
 
 #o-nas .kolumna p,
     #o-nas .kolumna h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: left;
     margin-top: 0;
 }
@@ -187,7 +187,7 @@
 #o-nas .kolumna .img-cont .img-photo .mask .mask-inner p {
     text-align: center;
     margin: 0 10px;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: #F0F0F0;
@@ -230,6 +230,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border: 8px solid white;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -mozilla-border-radius: 5px;
     border-radius: 5px;
     transition: all .5s;
 }

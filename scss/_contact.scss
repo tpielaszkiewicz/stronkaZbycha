@@ -1,0 +1,27 @@
+//podpinamy plik ze zmiennymi
+@import "variables";
+@import "mixins";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+
+#contact {
+    @include section;
+    .row {
+        margin-bottom: 20px;
+    }
+    #contact-data {}
+    #map {
+        border: 5px solid white;
+        @include border-radius(5px);
+        padding: 0;
+        
+        iframe {
+            width: 100%;
+            height: 350px;
+        }
+    }
+}

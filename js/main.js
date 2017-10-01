@@ -93,7 +93,7 @@ function rotateIcon() {
 }
 
 function smoothScroll() {
-    $(".smooth-scroll").on('click', function (event) {
+    $("header a").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // Prevent default anchor click behavior
@@ -119,6 +119,8 @@ function smoothScroll() {
 
 // metoda symulująca wysłanie maila - metoda post ajax - po stronie serwera juz te dane powinny byc obronione i mail wysłany
 function sendMail() {
+    
+    console.log('dziala');
     $.ajax('http://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         data: {

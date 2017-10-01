@@ -1,0 +1,45 @@
+//podpinamy plik ze zmiennymi
+@import "variables";
+@import "mixins";
+
+
+.navbar-default {
+    background-color: $color-white-light;
+    border: none;
+    min-height: 50px;
+    .navbar-nav {
+        li {
+            a {
+                color: $color-black;
+                font-weight: $font-bold;
+                transition: all 0.5s;
+                &:hover {
+                    color: $color-blue-dark;
+                }
+            }
+        }
+    }
+    .navbar-brand {
+        color: $color-blue-dark;
+        padding: 5px 15px;
+        img {
+            height: 45px;
+        }
+    }
+    .navbar-toggle {
+        border-color: black;
+        .icon-bar {
+            background-color: black;
+        }
+        &:hover {
+            background-color: $color-white-light;
+            border-color: $color-blue-dark;
+            .icon-bar {
+                background-color: $color-blue-dark;
+            }
+        }
+        &:focus {
+            background-color: $color-white-light;
+        }
+    }
+}

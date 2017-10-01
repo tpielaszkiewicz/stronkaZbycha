@@ -9,6 +9,17 @@
     margin: auto;
 }
 
+@mixin section{
+    padding: 20px;
+    background-color: $color-white-light;
+    overflow: hidden;
+    h3,
+    p {
+        font-family: $font-sections;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
 
 // mixin z uzyciem zmiennych - parametrów
 @mixin border-radius($radius){
