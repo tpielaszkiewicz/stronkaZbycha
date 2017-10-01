@@ -1,27 +1,76 @@
 //podpinamy plik ze zmiennymi
 @import "variables";
 @import "mixins";
-
 * {
     box-sizing: border-box;
     font-family: 'Droid Serif', sans-serif;
 }
-
 
 #contact {
     @include section;
     .row {
         margin-bottom: 20px;
     }
-    #contact-data {}
+    #contact-data {
+        text-align: center;
+        a,
+        span {
+            text-decoration: none;
+            font-family: $font-sections;
+        }
+        a {
+            color: $color-blue-dark;
+        }
+        #social-media {
+            margin-top: 15px;
+            a {
+                padding: 5px;
+            }
+            .social-icon {
+                font-size: 60px;
+                width: 80px;
+                height: 80px;
+                display: inline-block;
+                line-height: 80px;
+                margin-bottom: 20px;
+                transition: all 0.5s;
+                border-radius: 10px;
+                &:hover {
+                    transform: rotate(360deg);
+                    .fa {
+                        color: $color-white-light;
+                    }
+                    background-color: $color-blue-dark;
+                }
+                .fa {
+                    color: $color-blue-dark;
+                    &:hover {
+                        color: $color-white-light;
+                    }
+                }
+            }
+        }
+    }
     #map {
         border: 5px solid white;
         @include border-radius(5px);
         padding: 0;
-        
         iframe {
             width: 100%;
             height: 350px;
         }
+    }
+    form {
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px white inset;
+            -webkit-text-fill-color: $color-grey-dark;
+        }
+    }
+    
+    .btn-primary{
+        font-family: $font-sections;
+        background-color: $color-blue-dark;
+        border-color: $color-blue-light;
+        font-weight: 600;
     }
 }

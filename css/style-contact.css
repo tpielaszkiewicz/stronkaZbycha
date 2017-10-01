@@ -107,6 +107,56 @@
     margin-bottom: 20px;
 }
 
+#contact #contact-data {
+    text-align: center;
+}
+
+#contact #contact-data a,
+    #contact #contact-data span {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+#contact #contact-data a {
+    color: #31b0d5;
+}
+
+#contact #contact-data #social-media {
+    margin-top: 15px;
+}
+
+#contact #contact-data #social-media a {
+    padding: 5px;
+}
+
+#contact #contact-data #social-media .social-icon {
+    font-size: 60px;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    line-height: 80px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+#contact #contact-data #social-media .social-icon:hover {
+    transform: rotate(360deg);
+    background-color: #31b0d5;
+}
+
+#contact #contact-data #social-media .social-icon:hover .fa {
+    color: #F0F0F0;
+}
+
+#contact #contact-data #social-media .social-icon .fa {
+    color: #31b0d5;
+}
+
+#contact #contact-data #social-media .social-icon .fa:hover {
+    color: #F0F0F0;
+}
+
 #contact #map {
     border: 5px solid white;
     -o-border-radius: 5px;
@@ -119,6 +169,18 @@
 #contact #map iframe {
     width: 100%;
     height: 350px;
+}
+
+#contact form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    -webkit-text-fill-color: #555;
+}
+
+#contact .btn-primary {
+    font-family: "Montserrat", sans-serif;
+    background-color: #31b0d5;
+    border-color: #2a6aff;
+    font-weight: 600;
 }
 
 footer .fa {
