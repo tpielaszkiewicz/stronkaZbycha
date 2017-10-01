@@ -17,11 +17,11 @@ function pageInit() {
 
 function plotterSlider(){
     $('#plotter').on('click', function() {
-        $('#slider1').removeClass('slider-invisible');
+        $('#slider-wrap').removeClass('slider-invisible');
     });
     
     $('#exit').on('click', function() {
-        $('#slider1').addClass('slider-invisible');
+        $('#slider-wrap').addClass('slider-invisible');
     })
 }
 
@@ -93,9 +93,7 @@ function rotateIcon() {
 }
 
 function smoothScroll() {
-    $("nav a").on('click', function (event) {
-
-
+    $(".smooth-scroll").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // Prevent default anchor click behavior
