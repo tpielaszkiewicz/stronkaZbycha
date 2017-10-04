@@ -1,0 +1,19 @@
+//podpinamy plik ze zmiennymi
+@import "variables";
+@import "mixins";
+* {
+    box-sizing: border-box;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+body {
+    //    overflow: hidden;
+}
+
+@import "navbar";
+
+@import "header";
+
+@import "offer";
+
+@import "footer";

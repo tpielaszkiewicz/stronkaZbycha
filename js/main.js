@@ -5,7 +5,7 @@ $(document).ready(function () {
     
 //    changeNavbar();
 //    changeSizeHandler();
-    //    rotateIcon();
+    showQuery();
     smoothScroll();
 });
 
@@ -13,6 +13,13 @@ function pageInit() {
     if ($(window).scrollTop() > 150) {
         $('.row').css('left', '0%');
     }
+}
+
+function showQuery(){
+    $('#ask').on('click',function(){
+        console.log('asdas');
+        $('.pop-up-container').removeClass('invisible');
+    })
 }
 
 function plotterSlider(){
@@ -93,7 +100,7 @@ function rotateIcon() {
 }
 
 function smoothScroll() {
-    $("header a").on('click', function (event) {
+    $(".smooth-scroll").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // Prevent default anchor click behavior

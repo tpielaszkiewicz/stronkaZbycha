@@ -1,0 +1,109 @@
+//podpinamy plik ze zmiennymi
+@import "variables";
+@import "mixins";
+* {
+    box-sizing: border-box;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+#offer {
+    @include section;
+    text-align: center;
+    .advertisement a {
+        position: relative;
+        text-decoration: none;
+        font-family: $font-sections;
+        font-weight: 600;
+        transition: all .5s;
+        &:hover {
+            color: $color-black;
+            &::before,
+            &::after {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                -moz-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+        }
+        &:focus {
+            color: $color-black;
+            &::before,
+            &::after {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                -moz-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+        }
+        &::before,
+        &::after {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $color-black;
+            content: '';
+            opacity: 0;
+            -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+            -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+            transition: opacity 0.3s, transform 0.3s;
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+        &::before {
+            top: 0;
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+        &::after {
+            bottom: 0;
+            -webkit-transform: translateY(10px);
+            -moz-transform: translateY(10px);
+            transform: translateY(10px);
+        }
+    }
+    .mill {
+        ul {
+            list-style: none;
+            // na wyrównanie marginesu od fonta
+            padding: 0 15px 0 0;
+            margin-bottom: 20px;
+            li {
+                list-style-type: none;
+                list-style: none;
+                font-family: $font-sections;
+                margin-bottom: 10px;
+                &::before {
+                    font-family: 'FontAwesome';
+                    content: '\f013';
+                    margin-right: 15px;
+                }
+            }
+        }
+        a {
+            //button na koncu
+            font-weight: 600;
+        }
+    }
+    .invisible {
+        display: none;
+    }
+    .row {
+        margin-bottom: 15px;
+    }
+    span {
+        font-weight: 00;
+    }
+}
+
+#letters-space,
+#letters-lighted,
+#cassetons {
+    @include sub-section;
+    span {
+        font-weight: 800;
+    }
+
+}

@@ -1,21 +1,84 @@
 //podpinamy plik ze zmiennymi
 @import "variables";
 @import "mixins";
-
-
 .navbar-default {
     background-color: $color-white-light;
     border: none;
     min-height: 50px;
+    .dropdown-menu {
+        padding: 5px 0;
+        border: none;
+        background-color: $color-white-light;
+        li {
+            padding: 5px;
+            position: relative;
+            a {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #333;
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                }
+                &:hover::before {
+                    visibility: visible;
+                    background-color: $color-blue-dark;
+                    -webkit-transform: scaleX(.9);
+                    transform: scaleX(.9);
+                }
+            }
+        }
+    }
     .navbar-nav {
         li {
             a {
                 color: $color-black;
                 font-weight: $font-bold;
                 transition: all 0.5s;
+                text-align: center;
+                background-color: #F0F0F0;
                 &:hover {
                     color: $color-blue-dark;
                 }
+                
+//                &::before,
+//                &:after{
+//                    content: "";
+//                    position: absolute;
+//                    width: 100%;
+//                    height: 2px;
+////                    bottom: 0;
+//                    left: 0;
+//                    background-color: #333;
+//                    visibility: hidden;
+//                    -webkit-transform: scaleX(0);
+//                    transform: scaleX(0);
+//                    -webkit-transition: all 0.3s ease-in-out 0s;
+//                    transition: all 0.3s ease-in-out 0s;
+//                }
+//                
+//                &::before{
+//                    top: 0;
+//                }
+//                
+//                &::after{
+//                    bottom: 0;
+//                }
+//                
+//                &:hover::before,
+//                &:hover::after{
+//                    visibility: visible;
+//                    background-color: $color-blue-dark;
+//                    -webkit-transform: scaleX(.8);
+//                    transform: scaleX(.8);
+//                }
             }
         }
     }

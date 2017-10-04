@@ -3,6 +3,30 @@
         background-color: #F0F0F0;
     }
 
+    .navbar-default .navbar-nav .open a {
+        color: black;
+    }
+
+    .navbar-default .navbar-nav .open a:hover {
+        color: black;
+    }
+
+    .navbar-default .navbar-nav .open a:focus {
+        color: black;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu li a {
+        color: black;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu li a:hover {
+        color: #31b0d5;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu li a:focus {
+        color: #31b0d5;
+    }
+
     #header {
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/header/27285334-civil-engineering-wallpapers.jpg");
         background-attachment: fixed;

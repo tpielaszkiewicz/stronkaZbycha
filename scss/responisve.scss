@@ -1,30 +1,56 @@
-@import "variables";
-@import "mixins";
-@media screen and (max-width: 767px) {
-    .navbar-default {
-        background-color: $color-white-light;
-    }
-    #header {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/header/27285334-civil-engineering-wallpapers.jpg');
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-    }
-    #o-nas {
-        .row {
-            margin: 15px 0px;
-        }
-        .kolumna {
-            p,
-            h4 {
-                text-align: center;
+    @import "variables";
+    @import "mixins";
+    @media screen and (max-width: 767px) {
+        .navbar-default {
+            background-color: $color-white-light;
+            .navbar-nav {
+                .open {
+                    a {
+                        color: black;
+                        &:hover {
+                            color: black;
+                        }
+                        &:focus {
+                            color: black;
+                        }
+                    }
+                    .dropdown-menu {
+                        li {
+                            a {
+                                color: black;
+                                &:hover {
+                                    color: $color-blue-dark;
+                                }
+                                &:focus {
+                                    color: $color-blue-dark;
+                                }
+                            }
+                        }
+                    }
+                }
             }
-            .img-cont {
-                width: 100%;
+        }
+        #header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/header/27285334-civil-engineering-wallpapers.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        #o-nas {
+            .row {
+                margin: 15px 0px;
+            }
+            .kolumna {
+                p,
+                h4 {
+                    text-align: center;
+                }
+                .img-cont {
+                    width: 100%;
+                }
             }
         }
+        footer {
+            padding: 5px 0;
+        }
     }
-    footer {
-        padding: 5px 0;
-    }
-}
