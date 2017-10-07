@@ -120,102 +120,109 @@
     border-color: #F0F0F0;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: 'Droid Serif', sans-serif;
-}
-
-#contact {
+#realisation {
     padding: 30px;
     background-color: #F0F0F0;
     overflow: hidden;
 }
 
-#contact h3,
-  #contact p {
+#realisation h3,
+  #realisation p {
     font-family: "Montserrat", sans-serif;
     text-align: center;
     margin: 20px 0px;
 }
 
-#contact .row {
-    margin-bottom: 20px;
+#realisation #slider-realisation #gallery-min:hover::-webkit-scrollbar {
+    cursor: pointer;
 }
 
-#contact #contact-data {
-    text-align: center;
-}
-
-#contact #contact-data a,
-    #contact #contact-data span {
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-}
-
-#contact #contact-data a {
-    color: #31b0d5;
-}
-
-#contact #contact-data #social-media {
-    margin-top: 15px;
-}
-
-#contact #contact-data #social-media a {
-    padding: 5px;
-}
-
-#contact #contact-data #social-media .social-icon {
-    font-size: 60px;
-    width: 80px;
-    height: 80px;
-    display: inline-block;
-    line-height: 80px;
-    margin-bottom: 20px;
-    transition: all 0.5s;
+#realisation #slider-realisation #gallery-min::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
     border-radius: 10px;
 }
 
-#contact #contact-data #social-media .social-icon:hover {
-    transform: rotate(360deg);
-    background-color: #31b0d5;
+#realisation #slider-realisation #gallery-min::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
 }
 
-#contact #contact-data #social-media .social-icon:hover .fa {
-    color: #F0F0F0;
+#realisation #slider-realisation #gallery-min::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #FFF;
+    background-image: -webkit-linear-gradient(top, #2a6aff 0%, #31b0d5 20%, #31b0d5 80%, #2a6aff 100%);
 }
 
-#contact #contact-data #social-media .social-icon .fa {
-    color: #31b0d5;
+#realisation #slider-realisation .scrollbar {
+    /*background-color: #666;*/
+    width: 100%;
+    border-radius: 5px;
+    float: left;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
 }
 
-#contact #contact-data #social-media .social-icon .fa:hover {
-    color: #F0F0F0;
+#realisation #slider-realisation .scrollbar .force-overflow {
+    min-height: 450px;
 }
 
-#contact #map {
-    border: 5px solid white;
+#realisation #slider-realisation .one-image {
+    width: 50%;
+    margin: 0;
+    padding: 5px;
+    float: left;
+}
+
+#realisation #slider-realisation .one-image .image-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#realisation #slider-realisation .one-image .image-wrap img {
+    height: 100%;
+    transition: all .5s;
+}
+
+#realisation #slider-realisation .one-image .image-wrap img:hover, #realisation #slider-realisation .one-image .image-wrap img:focus {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+#realisation #slider-realisation .one-image .image-wrap:hover .figcaption {
+    bottom: 10%;
+}
+
+#realisation #slider-realisation .one-image .image-wrap .figcaption {
+    position: absolute;
+    bottom: -50%;
+    transition: all .5s;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+#realisation #slider-realisation .one-image .image-wrap .figcaption:hover {
+    bottom: -20%;
+}
+
+#realisation #slider-realisation .wrapper {
+    padding: 10px;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+#realisation #slider-realisation .wrapper img {
+    width: 100%;
+    transition: all 1s;
     -o-border-radius: 5px;
     -webkit-border-radius: 5px;
     -mozilla-border-radius: 5px;
     border-radius: 5px;
-    padding: 0;
-}
-
-#contact #map iframe {
-    width: 100%;
-    height: 350px;
-}
-
-#contact form input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px white inset;
-    -webkit-text-fill-color: #555;
-}
-
-#contact .btn-primary {
-    font-family: "Montserrat", sans-serif;
-    background-color: #31b0d5;
-    border-color: #2a6aff;
-    font-weight: 600;
 }
 
 footer .fa {

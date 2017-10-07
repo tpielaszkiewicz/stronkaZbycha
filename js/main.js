@@ -2,58 +2,96 @@ $(document).ready(function () {
     pageInit();
     passIn();
     plotterSlider();
-    
-//    changeNavbar();
-//    changeSizeHandler();
+    replaceRealisationImg();
     showQuery();
     smoothScroll();
+
 });
+
+function replaceRealisationImg() {
+    $('.one-image').on('click', function () {
+        console.log($(this).attr('data-key'));
+
+        switch ($(this).attr('data-key')) {
+            case '1':
+                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-279315.jpeg');
+                console.log('blabla');
+                break;
+            case '2':
+                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-289317.jpeg');
+                break;
+            case '3':
+                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-432828.jpeg');
+                break;
+            case '4':
+                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-459149.jpeg');
+                break;
+            case '5':
+                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-464331.jpeg');
+                break;
+            case '6':
+                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-464431.jpeg');
+                break;
+            default:
+                break;
+        }
+    })
+
+}
 
 function pageInit() {
     if ($(window).scrollTop() > 150) {
         $('.row').css('left', '0%');
     }
+
+    // for images in gallery set width = height to ensure square 
+    $('.one-image').height($('.one-image').width());
+
+    $(window).resize(function () {
+        $('.one-image').height($('.one-image').width())
+    });
+
 }
 
-function showQuery(){
-    $('#ask').on('click',function(){
+function showQuery() {
+    $('#ask').on('click', function () {
         console.log('asdas');
         $('.pop-up-container').removeClass('invisible');
     })
 }
 
-function plotterSlider(){
-    $('#plotter').on('click', function() {
+function plotterSlider() {
+    $('#plotter').on('click', function () {
         $('#slider-wrap').removeClass('slider-invisible');
     });
-    
-    $('#exit').on('click', function() {
+
+    $('#exit').on('click', function () {
         $('#slider-wrap').addClass('slider-invisible');
     })
 }
 
 
-function passIn(){
-    $(window).on('scroll', function(){
-        
+function passIn() {
+    $(window).on('scroll', function () {
+
         if ($(window).scrollTop() > 130) {
-            $('.row:nth-child(1)').css('left','0%');
+            $('.row:nth-child(1)').css('left', '0%');
         }
-        
+
         if ($(window).scrollTop() > 200) {
-            $('.row:nth-child(2)').css('left','0%');
+            $('.row:nth-child(2)').css('left', '0%');
         }
-        
+
         if ($(window).scrollTop() > 450) {
-            $('.row:nth-child(3)').css('left','0%');
+            $('.row:nth-child(3)').css('left', '0%');
         }
-        
+
         if ($(window).scrollTop() > 900) {
-            $('.row:nth-child(4)').css('left','0%');
+            $('.row:nth-child(4)').css('left', '0%');
         }
-        
+
         if ($(window).scrollTop() > 1000) {
-            $('.row:nth-child(5)').css('left','0%');
+            $('.row:nth-child(5)').css('left', '0%');
         }
     })
 }
@@ -126,7 +164,7 @@ function smoothScroll() {
 
 // metoda symulująca wysłanie maila - metoda post ajax - po stronie serwera juz te dane powinny byc obronione i mail wysłany
 function sendMail() {
-    
+
     console.log('dziala');
     $.ajax('http://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
@@ -137,5 +175,5 @@ function sendMail() {
         }
     }).then(function (data) {
         console.log(data);
-   });
+    });
 }

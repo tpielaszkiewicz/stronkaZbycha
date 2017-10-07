@@ -1,18 +1,16 @@
 //podpinamy plik ze zmiennymi
 @import "variables";
 @import "mixins";
-
 #o-nas {
-//    padding: 20px;
-//    background-color: $color-white-light;
-//    overflow: hidden;
-//    h3,
-//    p {
-//        font-family: $font-sections;
-//        text-align: center;
-//        margin-bottom: 20px;
-//    }
-    
+    //    padding: 20px;
+    //    background-color: $color-white-light;
+    //    overflow: hidden;
+    //    h3,
+    //    p {
+    //        font-family: $font-sections;
+    //        text-align: center;
+    //        margin-bottom: 20px;
+    //    }
     @include section;
     .row {
         margin: 40px 0px;
@@ -120,10 +118,9 @@
         position: fixed;
         height: 100vh;
         width: 100vw;
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(0, 0, 0, 0.7);
         top: 0;
         left: 0;
-        
         #slider1 {
             overflow: hidden;
             position: fixed;
@@ -132,12 +129,14 @@
             transform: translate(-50%, -50%);
             border: 8px solid white;
             @include border-radius(5px);
-//            border-radius: 5px;
+            //            border-radius: 5px;
             transition: all .5s;
             #exit-bar {
-                height: 30px;
-                text-align: right;
-                background-color: white;
+                position: absolute;
+                background-color: transparent;
+                top: 0;
+                z-index: 10;
+                right: 0;
                 .fa {
                     color: black;
                     font-size: 28px;
@@ -147,14 +146,13 @@
                     }
                 }
             }
-            
-            img{
+            img {
                 max-height: 80vh;
             }
         }
     }
     .slider-invisible {
-//        @include invisible;
+        //        @include invisible;
         opacity: 0.0;
         display: none;
     }

@@ -1,6 +1,5 @@
 // zestaw atrybutow ktorego chcemy uzywac w wieu miejscach
-
-@mixin center-block{
+@mixin center-block {
     position: absolute;
     top: 0;
     left: 0;
@@ -9,20 +8,20 @@
     margin: auto;
 }
 
-@mixin section{
-    padding: 40px;
+@mixin section {
+    padding: 30px;
     background-color: $color-white-light;
     overflow: hidden;
     h3,
     p {
         font-family: $font-sections;
         text-align: center;
-        margin-bottom: 20px;
+        margin: 20px 0px;
     }
 }
 
-@mixin sub-section{
-    padding: 20px;
+@mixin sub-section {
+    padding: 40px 20px;
     background-color: $color-white-light;
     overflow: hidden;
     h4,
@@ -34,14 +33,26 @@
 }
 
 // mixin z uzyciem zmiennych - parametrów
-@mixin border-radius($radius){
+@mixin border-radius($radius) {
     -o-border-radius: $radius;
     -webkit-border-radius: $radius;
     -mozilla-border-radius: $radius;
     border-radius: $radius;
 }
 
-@mixin invisible{
+@mixin invisible {
     display: none;
     opacity: 0.0;
+}
+
+@mixin list {
+    list-style-type: none;
+    list-style: none;
+    font-family: $font-sections;
+    margin-bottom: 10px;
+    &::before {
+        font-family: 'FontAwesome';
+        content: '\f013';
+        margin-right: 15px;
+    }
 }

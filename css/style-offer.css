@@ -120,13 +120,8 @@
     border-color: #F0F0F0;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: 'Droid Serif', sans-serif;
-}
-
 #offer {
-    padding: 40px;
+    padding: 30px;
     background-color: #F0F0F0;
     overflow: hidden;
     text-align: center;
@@ -136,7 +131,7 @@
   #offer p {
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 
 #offer .advertisement a {
@@ -199,26 +194,35 @@
     transform: translateY(10px);
 }
 
-#offer .mill ul {
+#offer #mill-offer ul,
+  #offer #laser-offer ul,
+  #offer #d-offer ul {
     list-style: none;
-    padding: 0 15px 0 0;
+    text-align: left;
+    padding-left: 10%;
     margin-bottom: 20px;
 }
 
-#offer .mill ul li {
+#offer #mill-offer ul li,
+    #offer #laser-offer ul li,
+    #offer #d-offer ul li {
     list-style-type: none;
     list-style: none;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 10px;
 }
 
-#offer .mill ul li::before {
+#offer #mill-offer ul li::before,
+      #offer #laser-offer ul li::before,
+      #offer #d-offer ul li::before {
     font-family: 'FontAwesome';
     content: '\f013';
     margin-right: 15px;
 }
 
-#offer .mill a {
+#offer #ask {
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
 
@@ -231,15 +235,38 @@
 }
 
 #offer span {
-    font-weight: 00;
+    font-weight: 600;
+}
+
+#offer #laser-offer h4 {
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+#offer #laser-offer ul {
+    margin-left: 0px;
+}
+
+#offer #d-offer .panel {
+    text-align: left;
+    margin-top: 30px;
+}
+
+#offer #d-offer .panel ul {
+    padding-left: 0;
+}
+
+#offer #d-offer .panel ul li::before {
+    content: '\f2b5';
 }
 
 #letters-space,
 #letters-lighted,
 #cassetons {
-    padding: 20px;
+    padding: 40px 20px;
     background-color: #F0F0F0;
     overflow: hidden;
+    text-align: center;
 }
 
 #letters-space h4,

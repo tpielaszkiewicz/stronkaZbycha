@@ -121,7 +121,7 @@
 }
 
 #o-nas {
-    padding: 40px;
+    padding: 30px;
     background-color: #F0F0F0;
     overflow: hidden;
 }
@@ -130,7 +130,7 @@
   #o-nas p {
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 
 #o-nas .row {
@@ -273,9 +273,11 @@
 }
 
 #o-nas #slider-wrap #slider1 #exit-bar {
-    height: 30px;
-    text-align: right;
-    background-color: white;
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    z-index: 10;
+    right: 0;
 }
 
 #o-nas #slider-wrap #slider1 #exit-bar .fa {

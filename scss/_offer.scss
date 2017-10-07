@@ -1,10 +1,6 @@
 //podpinamy plik ze zmiennymi
 @import "variables";
 @import "mixins";
-* {
-    box-sizing: border-box;
-    font-family: 'Droid Serif', sans-serif;
-}
 
 #offer {
     @include section;
@@ -64,28 +60,24 @@
             transform: translateY(10px);
         }
     }
-    .mill {
+    #mill-offer,
+    #laser-offer,
+    #d-offer {
         ul {
             list-style: none;
-            // na wyrównanie marginesu od fonta
-            padding: 0 15px 0 0;
+            text-align: left;
+            padding-left: 10%;
             margin-bottom: 20px;
             li {
-                list-style-type: none;
-                list-style: none;
-                font-family: $font-sections;
-                margin-bottom: 10px;
-                &::before {
-                    font-family: 'FontAwesome';
-                    content: '\f013';
-                    margin-right: 15px;
-                }
+                @include list;
             }
         }
-        a {
-            //button na koncu
-            font-weight: 600;
-        }
+    }
+    #ask {
+        //button na koncu
+        padding: 10px;
+        font-family: $font-sections;
+        font-weight: 600;
     }
     .invisible {
         display: none;
@@ -94,7 +86,31 @@
         margin-bottom: 15px;
     }
     span {
-        font-weight: 00;
+        font-weight: 600;
+    }
+    #laser-offer {
+        h4 {
+            font-family: $font-sections;
+            text-align: left;
+        }
+        ul {
+            margin-left: 0px;
+        }
+    }
+    #d-offer {
+        .panel {
+            text-align: left;
+            margin-top: 30px;
+            ul {
+                padding-left: 0;
+                li {
+                    
+                    &::before{
+                        content: '\f2b5';
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -102,8 +118,8 @@
 #letters-lighted,
 #cassetons {
     @include sub-section;
+    text-align: center;
     span {
         font-weight: 800;
     }
-
 }

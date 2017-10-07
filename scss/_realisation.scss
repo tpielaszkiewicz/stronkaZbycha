@@ -1,0 +1,98 @@
+//podpinamy plik ze zmiennymi
+@import "variables";
+@import "mixins";
+#realisation {
+    @include section;
+    #slider-realisation {
+        #gallery-min {
+            &:hover::-webkit-scrollbar{
+                cursor: pointer;
+            }
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+                background-color: #F5F5F5;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar {
+                width: 10px;
+                background-color: #F5F5F5;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                background-color: #FFF;            
+                background-image: -webkit-linear-gradient(top, $color-blue-light 0%, $color-blue-dark 20%, $color-blue-dark 80%, $color-blue-light 100%);
+
+            }
+        }
+        .scrollbar {
+            //            border: 3px solid rgba(255,255,255,1.0);
+            /*background-color: #666;*/
+            width: 100%;
+            border-radius: 5px;
+//            margin-left: 30px;
+            float: left;
+            max-height: 300px;
+            overflow-y: scroll;
+            margin-bottom: 25px;
+            .force-overflow {
+                min-height: 450px;
+            }
+        }
+        .one-image {
+            width: 50%;
+            //            background-color: red;
+            margin: 0;
+            padding: 5px;
+            float: left;
+            //            &:nth-child(even) {
+            //                background-color: blue;
+            //            }
+            .image-wrap {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                img {
+                    height: 100%;
+                    transition: all .5s;
+                    &:hover,
+                    &:focus {
+                        cursor: pointer;
+                        transform: scale(1.5);
+                    }
+                }
+                
+                &:hover{
+                    .figcaption{
+                        bottom: 10%;
+                    }
+                }
+            
+                .figcaption{
+                    position: absolute;
+                    bottom: -50%;
+                    transition: all .5s;
+                    color: white;
+                    width: 100%;
+                    text-align: center;
+                    font-family: $font-sections;
+                    
+                    &:hover{
+                        bottom: -20%;
+                    }
+                    
+                }
+            }
+        }
+        .wrapper{
+            padding: 10px;
+            max-height: 300px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                transition: all 1s;
+                @include border-radius(5px);
+            }
+        }
+    }
+}

@@ -18,9 +18,10 @@
 
     <!--Skompresowany BootstrapCSS dodany lokalnie -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <!--do slidera-->
+    <!--    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css" />-->
     <!--moje style-->
-    <link rel="stylesheet" href="css/style-contact.css">
+    <link rel="stylesheet" href="css/style-realisation.css">
     <link rel="stylesheet" href="css/responisve.css">
 </head>
 
@@ -56,7 +57,7 @@
                     </li>
                     <li><a href="realisation.html" class="text-uppercase nav-link">Realizacje</a></li>
                     <li><a href="#team" class="text-uppercase nav-link">Cennik Usług</a></li>
-                    <li><a href="#contact" class="text-uppercase smooth-scroll nav-link">Kontakt</a></li>
+                    <li><a href="contact.html" class="text-uppercase smooth-scroll nav-link">Kontakt</a></li>
                 </ul>
             </div>
         </div>
@@ -68,73 +69,86 @@
         <div id="header-cont">
             <h1><span class="text-uppercase">pcnc </span>Solutions</h1>
             <h2>Profesjonalne usługi frezarskie</h2>
-            <a id="view-more" href="#contact" class="btn btn-info smooth-scroll text-uppercase">kontakt</a>
+            <a id="view-more" href="#realisation" class="btn btn-info smooth-scroll text-uppercase">realizacje</a>
         </div>
     </header>
 
-    <section id="contact">
-        <div class="container">
+    <section id="realisation">
+        <div id="slider-realisation" class="container">
             <div class="row">
-                <h3 class="text-uppercase">Odezwij się !</h3>
-                <p class="sec-descr">Jeżeli jesteś zainteresowany naszymi usługami, skontaktuj się z nami, lub użyj formularza, by wysłać nam swój projekt:</p>
+                <h3 class="text-uppercase">realizacje</h3>
+                <p class="sec-descr">Z naszych usług wycinania, frezowania, grawerowania, druku 3D skorzystało bardzo wiele firm oraz instytucji. Podczas współpracy z nimi mieliśmy do czynienia z wieloma różnorodnymi materiałami m.in.
+                </p>
+                <p>Zapraszamy do obejrzenia galerii, przedstawiającej kilka zdjęć spośród naszych realizacji:</p>
             </div>
             <div class="row">
-                <div id="contact-data" class="col-xs-12 col-sm-6">
-                    <div id="contact-1">
-                        <p>Mgr inż. Zbigniew Pielaszkiewicz</p>
-                        <p>+48 999 222 333</p>
-                        <p>Mgr inż. Bartosz Ciak</p>
-                        <p>+48 234 567 890</p>
-                    </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="scrollbar" id="gallery-min">
 
-                    <div id="contact-2">
-                        <span>E-mail: </span><a href="mailto:zbig1989@wp.pl">dummyMail@gmail.com</a>
-                    </div>
-                    <div id="social-media">
-                        <div class="social-icon"><a href="https://www.facebook.pl"><i class="fa fa-facebook"></i></a></div>
-                        <div class="social-icon"> <a href="https://www.instagram.pl"><i class="fa fa-instagram"></i></a></div>
-                        <div class="social-icon"><a href="https://www.linkedin.pl"><i class="fa fa-linkedin"></i></a></div>
-                    </div>
-
-                </div>
-
-                <div class="col-xs-12 col-sm-6">
-                    <div id="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5066.528843687757!2d22.04045880393367!3d50.58503840946171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d2d2c90db0593%3A0x50a3aa4401e4613b!2sRomualda+Traugutta+37%2C+Stalowa+Wola!5e0!3m2!1spl!2spl!4v1506850560857" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <form action="javascript:sendMail();">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6">
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="username" placeholder="Imię i nazwisko *">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" placeholder="E-mail *">
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="number" class="form-control" id="phone" placeholder="Numer telefonu *">
+                        <div class="one-image" data-key="1">
+                            <div class="image-wrap" id="asdasd" >
+                                <!--                                <figure>-->
+                                <img src="../app/img/realisation/pexels-photo-279315.jpeg" alt="">
+                                <!--                                    <figcaption>This is figcaption</figcaption>-->
+                                <!--                                </figure>-->
+                                <div class="figcaption">
+                                    This is figcaption
                                 </div>
 
                             </div>
-                            <div class="col-xs-12 col-sm-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="6" id="message" placeholder="Zostaw wiadomość..."></textarea>
+
+                        </div>
+                        <div class="one-image" data-key="2">
+                            <div class="image-wrap">
+                                <img src="../app/img/realisation/pexels-photo-289317.jpeg" alt="">
+                                <div class="figcaption">
+                                    This is figcaption
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <button type="submit" id="send-message" class="btn btn-primary  text-uppercase">wyślij !</button>
+
+                        <div class="one-image"  data-key="3">
+                            <div class="image-wrap">
+                                <img src="../app/img/realisation/pexels-photo-432828.jpeg"  alt="">
+                                <div class="figcaption">
+                                    This is figcaption
+                                </div>
                             </div>
                         </div>
+                        <div class="one-image"  data-key="4">
+                            <div class="image-wrap">
+                                <figure></figure>
+                                <img src="../app/img/realisation/pexels-photo-459149.jpeg" alt="">
+                                <div class="figcaption">
+                                    This is figcaption
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="one-image"  data-key="5">
+                            <div class="image-wrap">
+                                <img src="../app/img/realisation/pexels-photo-464331.jpeg"  alt="">
+                                <div class="figcaption">
+                                    This is figcaption
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-image"  data-key="6">
+                            <div class="image-wrap" id="one-image-6">
+                                <img src="../app/img/realisation/pexels-photo-464431.jpeg"  alt="">
+                                <div class="figcaption">
+                                    This is figcaption
+                                </div>    
+                            </div>
+                        </div>
+
                     </div>
-                </form>
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    <div class="wrapper">
+                        <img id="realisation-img" src="" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -150,6 +164,11 @@
                 <p>Copright &copy; Tomasz Pielaszkiewicz</p>
             </div>
         </div>
+
+        <div id="realisation-gallery" class="row">
+
+
+        </div>
     </footer>
 
 
@@ -157,6 +176,8 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <!--Skompresowany plik BootstrapJavaScriptdodany lokalnie -->
     <script src="js/bootstrap.min.js"></script>
+    <!--slider-->
+    <!--    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>-->
     <!--i nasz skrypt na koniec :) -->
     <script src="js/main.js"></script>
 </body>
