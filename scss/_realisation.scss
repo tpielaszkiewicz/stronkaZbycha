@@ -90,7 +90,8 @@
             overflow: hidden;
             img{
                 width: 100%;
-                transition: all 1s;
+//                transition: all 1s;
+//                opacity: 0.0;
                 @include border-radius(5px);
             }
         }

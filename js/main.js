@@ -10,31 +10,31 @@ $(document).ready(function () {
 
 function replaceRealisationImg() {
     $('.one-image').on('click', function () {
-        console.log($(this).attr('data-key'));
-
+        var mainImg = $('.wrapper img');
+        mainImg.css('opacity','0.0');
         switch ($(this).attr('data-key')) {
             case '1':
-                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-279315.jpeg');
-                console.log('blabla');
+                mainImg.attr('src', '../app/img/realisation/pexels-photo-279315.jpeg');
                 break;
             case '2':
-                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-289317.jpeg');
+                mainImg.attr('src', '../app/img/realisation/pexels-photo-289317.jpeg');
                 break;
             case '3':
-                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-432828.jpeg');
+                mainImg.attr('src', '../app/img/realisation/pexels-photo-432828.jpeg');
                 break;
             case '4':
-                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-459149.jpeg');
+                mainImg.attr('src', '../app/img/realisation/pexels-photo-459149.jpeg');
                 break;
             case '5':
-                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-464331.jpeg');
+               mainImg.attr('src', '../app/img/realisation/pexels-photo-464331.jpeg');
                 break;
             case '6':
-                $('.wrapper img').attr('src', '../app/img/realisation/pexels-photo-464431.jpeg');
+                mainImg.attr('src', '../app/img/realisation/pexels-photo-464431.jpeg');
                 break;
             default:
                 break;
         }
+        mainImg.animate({opacity: 1.0}, 700, function(){});
     })
 
 }
