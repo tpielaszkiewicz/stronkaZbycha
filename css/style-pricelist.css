@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+.navbar-default {
+    background-color: #F0F0F0;
+    border: none;
+    min-height: 50px;
+}
+
+.navbar-default .dropdown-menu {
+    padding: 5px 0;
+    border: none;
+    background-color: #F0F0F0;
+}
+
+.navbar-default .dropdown-menu li {
+    padding: 5px;
+    position: relative;
+}
+
+.navbar-default .dropdown-menu li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-default .dropdown-menu li a:hover::before {
+    visibility: visible;
+    background-color: #31b0d5;
+    -webkit-transform: scaleX(0.9);
+    transform: scaleX(0.9);
+}
+
+.navbar-default .navbar-nav li a {
+    color: #000;
+    font-weight: 600;
+    transition: all 0.5s;
+    text-align: center;
+    background-color: #F0F0F0;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: #31b0d5;
+}
+
+.navbar-default .navbar-brand {
+    color: #31b0d5;
+    padding: 5px 15px;
+}
+
+.navbar-default .navbar-brand img {
+    height: 45px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #F0F0F0;
+    border-color: #31b0d5;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #31b0d5;
+}
+
+.navbar-default .navbar-toggle:focus {
+    background-color: #F0F0F0;
+}
+
+#header {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/header/27285334-civil-engineering-wallpapers.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+}
+
+#header #header-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header #header-cont h1,
+    #header #header-cont h2 {
+    color: #F0F0F0;
+    font-family: 'Roboto Slab', sans-serif;
+    margin-bottom: 30px;
+}
+
+#header #header-cont .btn-info {
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+#header #header-cont .btn-info:hover {
+    color: #31b0d5;
+    background-color: #F0F0F0;
+    border-color: #F0F0F0;
+}
+
+#pricelist {
+    padding: 30px;
+    background-color: #F0F0F0;
+    overflow: hidden;
+}
+
+#pricelist h3,
+  #pricelist p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#pricelist #pricelist-descr,
+  #pricelist #trzy-d {
+    margin-bottom: 20px;
+}
+
+#pricelist #pricelist-descr ul,
+    #pricelist #trzy-d ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 30%;
+    margin-bottom: 20px;
+}
+
+#pricelist #pricelist-descr ul li,
+      #pricelist #trzy-d ul li {
+    list-style-type: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}
+
+#pricelist #pricelist-descr ul li::before,
+        #pricelist #trzy-d ul li::before {
+    font-family: 'FontAwesome';
+    content: '\f013';
+    margin-right: 15px;
+}
+
+#pricelist #laser,
+  #pricelist #grawer,
+  #pricelist #giecie,
+  #pricelist #frez,
+  #pricelist #trzy-d {
+    padding: 40px 20px;
+    background-color: #F0F0F0;
+    overflow: hidden;
+}
+
+#pricelist #laser h4,
+    #pricelist #laser p,
+    #pricelist #grawer h4,
+    #pricelist #grawer p,
+    #pricelist #giecie h4,
+    #pricelist #giecie p,
+    #pricelist #frez h4,
+    #pricelist #frez p,
+    #pricelist #trzy-d h4,
+    #pricelist #trzy-d p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#pricelist .advertisement a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: all .5s;
+}
+
+#pricelist .advertisement a:hover {
+    color: #000;
+}
+
+#pricelist .advertisement a:hover::before, #pricelist .advertisement a:hover::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+#pricelist .advertisement a:focus {
+    color: #000;
+}
+
+#pricelist .advertisement a:focus::before, #pricelist .advertisement a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+#pricelist .advertisement a::before, #pricelist .advertisement a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+#pricelist .advertisement a::before {
+    top: 0;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+#pricelist .advertisement a::after {
+    bottom: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+#pricelist .attr-col {
+    margin: 52px 0 0;
+    float: left;
+    width: 200px;
+}
+
+#pricelist .attr-col ul {
+    background: #f4f4f4;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #d6d6d6;
+    padding: 0;
+    border-width: 1px 0px 1px 1px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#pricelist .attr-col ul li {
+    text-align: right;
+    padding: 0 10px;
+    border-bottom: 1px solid #d6d6d6;
+    line-height: 40px;
+    display: block;
+}
+
+#pricelist .attr-col ul li.last {
+    border-bottom: none;
+}
+
+#pricelist .pt-table {
+    padding-left: 200px;
+    display: block;
+    position: relative;
+}
+
+#pricelist .pt-body {
+    padding: 10px 0 0;
+}
+
+#pricelist .pt-rows {
+    padding-left: 10px;
+}
+
+#pricelist .pt-rows li {
+    display: block;
+    overflow: hidden;
+    background: #fff;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+#pricelist .pt-rows li span {
+    width: 33.3%;
+    text-align: center;
+    float: left;
+    border-right: 1px solid #d9d9d9;
+    display: block;
+    line-height: 40px;
+    height: 40px;
+}
+
+#pricelist .pt-rows li span:nth-child(3) {
+    width: 33.4%;
+}
+
+#pricelist .pt-rows li.title {
+    background: #666;
+    font-size: 18px;
+    color: #fff;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 2px solid #555;
+    border-width: 0 0 2px;
+}
+
+#pricelist .pt-rows li.title span {
+    line-height: 40px;
+    height: 40px;
+    border: none;
+    padding: 0 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #444;
+    font-family: "Montserrat", sans-serif;
+}
+
+#pricelist .pt-rows li.fees {
+    border-bottom: 1px solid #ccc;
+}
+
+#pricelist .pt-rows li.fees span {
+    line-height: 36px;
+    height: 36px;
+    background: #f7f7f7;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #4172a5;
+    text-shadow: 2px 2px #fff;
+}
+
+#pricelist .pt-rows li span.pt-yes {
+    background: url(yes-no.gif) no-repeat center 12px;
+}
+
+#pricelist .pt-rows li span.pt-no {
+    background: url(yes-no.gif) no-repeat center -38px;
+}
+
+#pricelist .pt-rows li.fin {
+    border-bottom: 2px solid #d9d9d9;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 85px;
+}
+
+#pricelist .pt-rows li span.pt-3x {
+    width: 72%;
+    float: left;
+    text-align: center;
+    border: none;
+}
+
+footer .fa {
+    font-size: 30px;
+    line-height: 30px;
+    color: #31b0d5;
+    margin: 10px;
+    transition: all .5s;
+    margin: 5px;
+}
+
+footer .fa:hover {
+    cursor: pointer;
+    color: black;
+}
+
+footer p {
+    margin: 10px;
+    line-height: 30px;
+}

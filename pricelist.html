@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Zapewnienie reagowania zawartości strony na różne wielkości ekranu, kwestia responsywnsci -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PCNC Solutions: Kontakt</title>
+
+    <!--Podpinamy czcionki-->
+    <!--   font awesome   -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!--   czcionki   -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+
+    <!--Skompresowany BootstrapCSS dodany lokalnie -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--do slidera-->
+    <!--    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css" />-->
+    <!--moje style-->
+    <link rel="stylesheet" href="css/style-pricelist.css">
+    <link rel="stylesheet" href="css/responisve.css">
+</head>
+
+<body>
+    <!-- zaczynamy od nawigacji-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div id="main-nav" class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                <a id="brand" class="navbar-brand" href="#"><img src="img/logo/imageedit_1_8144984550.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" class="text-uppercase nav-link smooth-scroll scrolled-link">O nas</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="text-uppercase dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">oferta
+<!--                        <span class="caret"></span>-->
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="text-uppercase" href="offer-reklama.html">produkcja reklamowa</a></li>
+                            <li><a class="text-uppercase" href="offer-frez.html">frezowanie cnc</a></li>
+                            <li><a class="text-uppercase" href="offer-laser.html">cięcie i grawerowanie laserowe</a></li>
+                            <li><a class="text-uppercase" href="offer-3d.html">usługi druku i modelowanie 3d</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="realisation.html" class="text-uppercase nav-link">Realizacje</a></li>
+                    <li><a href="#pricelist" class="text-uppercase nav-link">Cennik Usług</a></li>
+                    <li><a href="contact.html" class="text-uppercase smooth-scroll nav-link">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--header ze zdjeciem-->
+    <header id="header" class="page-header">
+        <div id="header-cont">
+            <h1><span class="text-uppercase">pcnc </span>Solutions</h1>
+            <h2>Profesjonalne usługi frezarskie</h2>
+            <a id="view-more" href="#pricelist" class="btn btn-info smooth-scroll text-uppercase">cennik</a>
+        </div>
+    </header>
+
+    <section id="pricelist">
+        <div class="container">
+            <div id="pricelist-descr" class="row">
+                <h3 class="text-uppercase">cennik</h3>
+                <p class="sec-descr">Przygotowanie krzywych do cięcia na podstawie pliku dostarczonego od klienta:
+                </p>
+                <ul>
+                    <li>25 zł – proste kształty, krawędzie do 2 m długości,</li>
+                    <li>50 zł – proste kształty, krawędzie ponad 2 m długości,
+                    </li>
+                    <li>Trudniejsze kształty wycena indywidualnie.</li>
+                </ul>
+            </div>
+            <div class="row advertisement">
+                <div class="col-xs-12 col-sm-1"></div>
+                <div class="col-xs-12 col-sm-2"><a class="text-uppercase smooth-scroll" href="#laser">laser</a></div>
+                <div class="col-xs-12 col-sm-2"><a class="text-uppercase smooth-scroll" href="#grawer">grawer</a></div>
+                <div class="col-xs-12 col-sm-2"><a class="text-uppercase smooth-scroll" href="#giecie">gięcie</a></div>
+                <div class="col-xs-12 col-sm-2"><a class="text-uppercase smooth-scroll" href="#frez">frez</a></div>
+                <div class="col-xs-12 col-sm-2"><a class="text-uppercase smooth-scroll" href="#trzy-d">Druk 3D</a></div>
+                   <div class="col-xs-12 col-sm-1"></div>
+            </div>
+            <div id="laser" class="row">
+                <h4 class="text-uppercase">cennik cięcia laserowego</h4>
+                <div class="price-chart">
+                    <div class="attr-col">
+                        <ul>
+                            <li>Frezowanie</li>
+                            <li>Cięcie laserowe</li>
+                            <li>Grawerowanie laserowe</li>
+                            <li>Druk 3D</li>
+                        </ul>
+                    </div>
+                    <div class="pt-table">
+                        <div class="pt-body">
+                            <ul class="pt-rows">
+                                <li class="title"><span>Wymiar 1</span><span>Wymiar 2</span><span>Wymiar 3</span></li>
+                                <li><span>-</span><span>-</span><span>-</span></li>
+                                <li><span class="pt-yes"></span><span class="pt-yes"></span><span class="pt-yes"></span></li>
+                                <li><span class="pt-no"></span><span class="pt-no"></span><span class="pt-no"></span></li>
+                                <li><span class="pt-no"></span><span>Single License</span><span>2 Licenses</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="grawer" class="row">
+                <h4 class="text-uppercase">cennik grawerowania laserowego</h4>
+                <div class="price-chart">
+                    <div class="attr-col">
+                        <ul>
+                            <li>Frezowanie</li>
+                            <li>Cięcie laserowe</li>
+                            <li>Grawerowanie laserowe</li>
+                            <li>Druk 3D</li>
+                        </ul>
+                    </div>
+                    <div class="pt-table">
+                        <div class="pt-body">
+                            <ul class="pt-rows">
+                                <li class="title"><span>Wymiar 1</span><span>Wymiar 2</span><span>Wymiar 3</span></li>
+                                <li><span>-</span><span>-</span><span>-</span></li>
+                                <li><span class="pt-yes"></span><span class="pt-yes"></span><span class="pt-yes"></span></li>
+                                <li><span class="pt-no"></span><span class="pt-no"></span><span class="pt-no"></span></li>
+                                <li><span class="pt-no"></span><span>Single License</span><span>2 Licenses</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="giecie" class="row">
+                <h4 class="text-uppercase">cennik gięcia</h4>
+                <div class="price-chart">
+                    <div class="attr-col">
+                        <ul>
+                            <li>Frezowanie</li>
+                            <li>Cięcie laserowe</li>
+                            <li>Grawerowanie laserowe</li>
+                            <li>Druk 3D</li>
+                        </ul>
+                    </div>
+                    <div class="pt-table">
+                        <div class="pt-body">
+                            <ul class="pt-rows">
+                                <li class="title"><span>Wymiar 1</span><span>Wymiar 2</span><span>Wymiar 3</span></li>
+                                <li><span>-</span><span>-</span><span>-</span></li>
+                                <li><span class="pt-yes"></span><span class="pt-yes"></span><span class="pt-yes"></span></li>
+                                <li><span class="pt-no"></span><span class="pt-no"></span><span class="pt-no"></span></li>
+                                <li><span class="pt-no"></span><span>Single License</span><span>2 Licenses</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="frez" class="row">
+                <h4 class="text-uppercase">cennik frezowania</h4>
+                <div class="price-chart">
+                    <div class="attr-col">
+                        <ul>
+                            <li>Frezowanie</li>
+                            <li>Cięcie laserowe</li>
+                            <li>Grawerowanie laserowe</li>
+                            <li>Druk 3D</li>
+                        </ul>
+                    </div>
+                    <div class="pt-table">
+                        <div class="pt-body">
+                            <ul class="pt-rows">
+                                <li class="title"><span>Wymiar 1</span><span>Wymiar 2</span><span>Wymiar 3</span></li>
+                                <li><span>-</span><span>-</span><span>-</span></li>
+                                <li><span class="pt-yes"></span><span class="pt-yes"></span><span class="pt-yes"></span></li>
+                                <li><span class="pt-no"></span><span class="pt-no"></span><span class="pt-no"></span></li>
+                                <li><span class="pt-no"></span><span>Single License</span><span>2 Licenses</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="trzy-d" class="row">
+                <h4 class="text-uppercase">Druk 3D</h4>
+                <p>Minimalna cena ( przygotowanie modelu do druku ) : 20 zł</p>
+                <p>Składowe ceny wydruku:</p>
+                <ul>
+                    <li>Godzina druku: 20 zł</li>
+                    <li>1 gram użytego PLA: 0.10 zł
+                    </li>
+                    <li>1 gram użytego ABS: 0.20 zł</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 text-center">
+                <a href="https://www.facebook.com/tomek.pielaszkiewicz?ref=br_rs"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/tomasz-pielaszkiewicz-aa4bb812b/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/tomasz-pielaszkiewicz-aa4bb812b/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="col-xs-12 col-sm-8 text-center">
+                <p>Copright &copy; Tomasz Pielaszkiewicz</p>
+            </div>
+        </div>
+
+        <div id="realisation-gallery" class="row">
+
+
+        </div>
+    </footer>
+
+
+    <!--jQuery(wymagany dla BootstrapJavaScript) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--Skompresowany plik BootstrapJavaScriptdodany lokalnie -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--slider-->
+    <!--    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>-->
+    <!--i nasz skrypt na koniec :) -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
