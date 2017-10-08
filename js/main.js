@@ -14,22 +14,22 @@ function replaceRealisationImg() {
         mainImg.css('opacity','0.0');
         switch ($(this).attr('data-key')) {
             case '1':
-                mainImg.attr('src', 'stronkaZbycha/img/realisation/photo5.jpeg');
+                mainImg.attr('src', '/img/realisation/photo5.jpeg');
                 break;
             case '2':
-                mainImg.attr('src', 'stronkaZbycha/img/realisation/photo5.jpeg');
+                mainImg.attr('src', '/img/realisation/photo5.jpeg');
                 break;
             case '3':
-                mainImg.attr('src', 'stronkaZbycha/img/realisation/photo5.jpeg');
+                mainImg.attr('src', '/img/realisation/photo5.jpeg');
                 break;
             case '4':
-                mainImg.attr('src', 'stronkaZbycha/img/realisation/photo5.jpeg');
+                mainImg.attr('src', '/img/realisation/photo5.jpeg');
                 break;
             case '5':
-               mainImg.attr('src', 'stronkaZbycha/img/realisation/photo5.jpeg');
+               mainImg.attr('src', '/img/realisation/photo5.jpeg');
                 break;
             case '6':
-                mainImg.attr('src', 'stronkaZbycha/img/realisation/photo5.jpeg');
+                mainImg.attr('src', '/img/realisation/photo5.jpeg');
                 break;
             default:
                 break;
