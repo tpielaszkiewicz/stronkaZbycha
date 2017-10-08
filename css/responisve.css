@@ -50,4 +50,46 @@
     footer {
         padding: 5px 0;
     }
+
+    #pricelist {
+        padding-bottom: 0;
+    }
+
+    #pricelist #trzy-d {
+        padding-bottom: 10px;
+    }
+
+    #pricelist .attr-col {
+        display: none;
+    }
+
+    #pricelist .pt-table {
+        padding-left: 0;
+    }
+
+    #pricelist .advertisement {
+        text-align: center;
+    }
+
+    #pricelist .advertisement .col-xs-12 {
+        margin: 5px 0px;
+    }
+
+    #pricelist #pricelist-descr ul,
+    #pricelist #trzy-d ul {
+        padding-left: 15%;
+    }
+
+    #pricelist .pt-rows li span {
+        width: 50%;
+    }
+
+    #pricelist .pt-rows li span:nth-child(2) {
+        border-right: none;
+    }
+
+    #pricelist .pt-rows li .title span {
+        line-height: 30px;
+        height: 30px;
+    }
 }
