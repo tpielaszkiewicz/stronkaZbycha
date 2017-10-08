@@ -314,6 +314,7 @@
 
 #pricelist .pt-rows li span:nth-child(3) {
     width: 33.4%;
+    border-right: none;
 }
 
 #pricelist .pt-rows li.title {
