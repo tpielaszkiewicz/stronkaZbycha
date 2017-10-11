@@ -9,8 +9,16 @@ $(document).ready(function () {
 });
 
 function sendMessage() {
-    $('send-message').on('click', function () {
-
+    $('#send-message').on('click', function () {
+        console.log('Idzie ajax');
+        $.ajax({
+            url: "https://formspree.io/tpielaszkiewicz@gmail.com",
+            method: "POST",
+            data: {
+                message: "hello!"
+            },
+            dataType: "json",
+        });
     })
 }
 
@@ -71,29 +79,29 @@ function showQuery() {
 function plotterSlider() {
     $('.main-image').on('click', function () {
         $('#slider').removeClass('slider-invisible');
-      
+
         switch ($(this).attr('id')) {
             case 'plotter':
-                $('#slider-photo4').attr('src','img/slider/ploter4.JPG'); 
-                $('#slider-photo1').attr('src','img/slider/ploter1.JPG'); 
-                $('#slider-photo2').attr('src','img/slider/ploter2.JPG'); 
-                $('#slider-photo3').attr('src','img/slider/ploter3.jpg'); 
-                
+                $('#slider-photo4').attr('src', 'img/slider/ploter4.JPG');
+                $('#slider-photo1').attr('src', 'img/slider/ploter1.JPG');
+                $('#slider-photo2').attr('src', 'img/slider/ploter2.JPG');
+                $('#slider-photo3').attr('src', 'img/slider/ploter3.jpg');
+
                 break;
             case 'frezarka':
-                $('#slider-photo1').attr('src','img/slider/frez_mala1.JPG'); 
-                $('#slider-photo2').attr('src','img/slider/frez_mala2.JPG'); 
-                $('#slider-photo3').attr('src','img/slider/frez_mala3.JPG'); 
-                $('#slider-photo4').attr('src','img/slider/frez_mala2.JPG'); 
+                $('#slider-photo1').attr('src', 'img/slider/frez_mala1.JPG');
+                $('#slider-photo2').attr('src', 'img/slider/frez_mala2.JPG');
+                $('#slider-photo3').attr('src', 'img/slider/frez_mala3.JPG');
+                $('#slider-photo4').attr('src', 'img/slider/frez_mala2.JPG');
                 break;
             case 'laser':
-                $('#slider-photo1').attr('src','img/slider/laser1.jpg'); 
-                $('#slider-photo2').attr('src','img/slider/laser2.jpg'); 
-                $('#slider-photo3').attr('src','img/slider/laser3.JPG'); 
-                $('#slider-photo4').attr('src','img/slider/laser4.JPG'); 
+                $('#slider-photo1').attr('src', 'img/slider/laser1.jpg');
+                $('#slider-photo2').attr('src', 'img/slider/laser2.jpg');
+                $('#slider-photo3').attr('src', 'img/slider/laser3.JPG');
+                $('#slider-photo4').attr('src', 'img/slider/laser4.JPG');
                 break;
-            }
-        
+        }
+
     });
 
     $('#exit').on('click', function () {
@@ -196,28 +204,28 @@ function smoothScroll() {
 // metoda symulująca wysłanie maila - metoda post ajax - po stronie serwera juz te dane powinny byc obronione i mail wysłany
 function sendMail() {
 
-//         var nodemailer = require('nodemailer');
-//
-//        var transporter = nodemailer.createTransport({
-//            service: 'gmail',
-//            auth: {
-//                user: 'tpielaszkiewicz@gmail.com',
-//                pass: 'lubaczow1'
-//            }
-//        });
-//
-//        var mailOptions = {
-//            from: 'tpielaszkiewicz@gmail.com',
-//            to: 'tpielaszkiewicz@gmai.com',
-//            subject: 'Sending Email using Node.js',
-//            text: 'That was easy!'
-//        };
-//
-//        transporter.sendMail(mailOptions, function (error, info) {
-//            if (error) {
-//                console.log(error);
-//            } else {
-//                console.log('Email sent: ' + info.response);
-//            }
-//        });
+    //         var nodemailer = require('nodemailer');
+    //
+    //        var transporter = nodemailer.createTransport({
+    //            service: 'gmail',
+    //            auth: {
+    //                user: 'tpielaszkiewicz@gmail.com',
+    //                pass: 'lubaczow1'
+    //            }
+    //        });
+    //
+    //        var mailOptions = {
+    //            from: 'tpielaszkiewicz@gmail.com',
+    //            to: 'tpielaszkiewicz@gmai.com',
+    //            subject: 'Sending Email using Node.js',
+    //            text: 'That was easy!'
+    //        };
+    //
+    //        transporter.sendMail(mailOptions, function (error, info) {
+    //            if (error) {
+    //                console.log(error);
+    //            } else {
+    //                console.log('Email sent: ' + info.response);
+    //            }
+    //        });
 }
