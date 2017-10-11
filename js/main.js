@@ -5,13 +5,19 @@ $(document).ready(function () {
     replaceRealisationImg();
     showQuery();
     smoothScroll();
-
+    sendMessage();
 });
+
+function sendMessage() {
+    $('send-message').on('click', function () {
+
+    })
+}
 
 function replaceRealisationImg() {
     $('.one-image').on('click', function () {
         var mainImg = $('.wrapper img');
-        mainImg.css('opacity','0.0');
+        mainImg.css('opacity', '0.0');
         switch ($(this).attr('data-key')) {
             case '1':
                 mainImg.attr('src', 'img/realisation/photo1.jpeg');
@@ -26,7 +32,7 @@ function replaceRealisationImg() {
                 mainImg.attr('src', 'img/realisation/photo4.jpeg');
                 break;
             case '5':
-               mainImg.attr('src', 'img/realisation/photo5.jpeg');
+                mainImg.attr('src', 'img/realisation/photo5.jpeg');
                 break;
             case '6':
                 mainImg.attr('src', 'img/realisation/photo6.jpeg');
@@ -34,7 +40,9 @@ function replaceRealisationImg() {
             default:
                 break;
         }
-        mainImg.animate({opacity: 1.0}, 700, function(){});
+        mainImg.animate({
+            opacity: 1.0
+        }, 700, function () {});
     })
 
 }
@@ -61,12 +69,35 @@ function showQuery() {
 }
 
 function plotterSlider() {
-    $('#plotter').on('click', function () {
-        $('#slider-wrap').removeClass('slider-invisible');
+    $('.main-image').on('click', function () {
+        $('#slider').removeClass('slider-invisible');
+      
+        switch ($(this).attr('id')) {
+            case 'plotter':
+                $('#slider-photo4').attr('src','img/slider/ploter4.JPG'); 
+                $('#slider-photo1').attr('src','img/slider/ploter1.JPG'); 
+                $('#slider-photo2').attr('src','img/slider/ploter2.JPG'); 
+                $('#slider-photo3').attr('src','img/slider/ploter3.jpg'); 
+                
+                break;
+            case 'frezarka':
+                $('#slider-photo1').attr('src','img/slider/frez_mala1.JPG'); 
+                $('#slider-photo2').attr('src','img/slider/frez_mala2.JPG'); 
+                $('#slider-photo3').attr('src','img/slider/frez_mala3.JPG'); 
+                $('#slider-photo4').attr('src','img/slider/frez_mala2.JPG'); 
+                break;
+            case 'laser':
+                $('#slider-photo1').attr('src','img/slider/laser1.jpg'); 
+                $('#slider-photo2').attr('src','img/slider/laser2.jpg'); 
+                $('#slider-photo3').attr('src','img/slider/laser3.JPG'); 
+                $('#slider-photo4').attr('src','img/slider/laser4.JPG'); 
+                break;
+            }
+        
     });
 
     $('#exit').on('click', function () {
-        $('#slider-wrap').addClass('slider-invisible');
+        $('#slider').addClass('slider-invisible');
     })
 }
 
@@ -165,15 +196,28 @@ function smoothScroll() {
 // metoda symulująca wysłanie maila - metoda post ajax - po stronie serwera juz te dane powinny byc obronione i mail wysłany
 function sendMail() {
 
-    console.log('dziala');
-    $.ajax('http://jsonplaceholder.typicode.com/posts', {
-        method: 'POST',
-        data: {
-            title: 'fssoo',
-            body: 'bsssar',
-            userId: 123
-        }
-    }).then(function (data) {
-        console.log(data);
-    });
+//         var nodemailer = require('nodemailer');
+//
+//        var transporter = nodemailer.createTransport({
+//            service: 'gmail',
+//            auth: {
+//                user: 'tpielaszkiewicz@gmail.com',
+//                pass: 'lubaczow1'
+//            }
+//        });
+//
+//        var mailOptions = {
+//            from: 'tpielaszkiewicz@gmail.com',
+//            to: 'tpielaszkiewicz@gmai.com',
+//            subject: 'Sending Email using Node.js',
+//            text: 'That was easy!'
+//        };
+//
+//        transporter.sendMail(mailOptions, function (error, info) {
+//            if (error) {
+//                console.log(error);
+//            } else {
+//                console.log('Email sent: ' + info.response);
+//            }
+//        });
 }

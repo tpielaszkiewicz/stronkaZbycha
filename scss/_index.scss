@@ -97,23 +97,25 @@
                 }
             }
             #photo1 {
-                background-image: url('../img/F6TC6SSHLSH97EV.MEDIUM.jpg');
+                background-image: url('../img/slider/ploter1.JPG');
             }
             #photo2 {
-                background-image: url('../img/lasercnc.jpg');
+                background-image: url('../img/slider/laser1.jpg');
             }
             #photo3 {
-                background-image: url('../img/milling.jpg');
+                background-image: url('../img/slider/frez_mala1.JPG');
             }
         }
     }
     #summary {
         margin: 0;
+        
+        
         .row {
             margin: 0;
         }
     }
-    #slider-wrap {
+    .slider-wrap {
         z-index: 10000;
         position: fixed;
         height: 100vh;

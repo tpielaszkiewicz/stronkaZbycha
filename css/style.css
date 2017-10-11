@@ -229,15 +229,15 @@
 }
 
 #o-nas .kolumna .img-cont #photo1 {
-    background-image: url("../img/F6TC6SSHLSH97EV.MEDIUM.jpg");
+    background-image: url("../img/slider/ploter1.JPG");
 }
 
 #o-nas .kolumna .img-cont #photo2 {
-    background-image: url("../img/lasercnc.jpg");
+    background-image: url("../img/slider/laser1.jpg");
 }
 
 #o-nas .kolumna .img-cont #photo3 {
-    background-image: url("../img/milling.jpg");
+    background-image: url("../img/slider/frez_mala1.JPG");
 }
 
 #o-nas #summary {
@@ -248,7 +248,7 @@
     margin: 0;
 }
 
-#o-nas #slider-wrap {
+#o-nas .slider-wrap {
     z-index: 10000;
     position: fixed;
     height: 100vh;
@@ -258,7 +258,7 @@
     left: 0;
 }
 
-#o-nas #slider-wrap #slider1 {
+#o-nas .slider-wrap #slider1 {
     overflow: hidden;
     position: fixed;
     top: 50%;
@@ -272,7 +272,7 @@
     transition: all .5s;
 }
 
-#o-nas #slider-wrap #slider1 #exit-bar {
+#o-nas .slider-wrap #slider1 #exit-bar {
     position: absolute;
     background-color: transparent;
     top: 0;
@@ -280,17 +280,17 @@
     right: 0;
 }
 
-#o-nas #slider-wrap #slider1 #exit-bar .fa {
+#o-nas .slider-wrap #slider1 #exit-bar .fa {
     color: black;
     font-size: 28px;
     right: 0;
 }
 
-#o-nas #slider-wrap #slider1 #exit-bar .fa:hover {
+#o-nas .slider-wrap #slider1 #exit-bar .fa:hover {
     cursor: pointer;
 }
 
-#o-nas #slider-wrap #slider1 img {
+#o-nas .slider-wrap #slider1 img {
     max-height: 80vh;
 }
 
