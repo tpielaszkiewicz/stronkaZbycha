@@ -77,6 +77,8 @@
                     }
                     .mask-inner {
                         position: absolute;
+                        opacity: inherit;
+                        
                         //                        width: 80%;
                         top: 50%;
                         //                        opacity: 0.0;
@@ -85,6 +87,7 @@
                         transition-timing-function: linear;
                         border: 3px solid $color-white-light;
                         p {
+                            opacity: inherit;
                             text-align: center;
                             margin: 0 10px;
                             font-family: $font-add;
@@ -109,8 +112,6 @@
     }
     #summary {
         margin: 0;
-        
-        
         .row {
             margin: 0;
         }

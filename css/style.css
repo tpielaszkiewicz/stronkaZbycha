@@ -212,6 +212,7 @@
 
 #o-nas .kolumna .img-cont .img-photo .mask .mask-inner {
     position: absolute;
+    opacity: inherit;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -220,6 +221,7 @@
 }
 
 #o-nas .kolumna .img-cont .img-photo .mask .mask-inner p {
+    opacity: inherit;
     text-align: center;
     margin: 0 10px;
     font-family: "Roboto Slab", sans-serif;
