@@ -218,6 +218,14 @@
     font-weight: 600;
 }
 
+#contact .alert-invisible {
+    display: none;
+}
+
+#contact .alert-border {
+    border: 2px solid red;
+}
+
 footer .fa {
     font-size: 30px;
     line-height: 30px;

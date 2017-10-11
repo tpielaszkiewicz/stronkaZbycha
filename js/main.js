@@ -10,15 +10,60 @@ $(document).ready(function () {
 
 function sendMessage() {
     $('#send-message').on('click', function () {
-        console.log('Idzie ajax');
+
+        var inputs = $('input');
+        var alert = false;
+
+        $('#success-box').addClass('alert-invisible');
+        for (var i = 0; i <= inputs.length; i++) {
+            var currInput = inputs[i];
+            if ($(currInput).val() == "") {
+                $(currInput).addClass('alert-border');
+                alert = true;
+            } else {
+                $(currInput).removeClass('alert-border');
+            }
+        };
+
+        if (alert == true) {
+            $('#alert-box').removeClass('alert-invisible');
+        } else {
+            $('#alert-box').addClass('alert-invisible');
+        };
+
+        $.ajax({
+            url: "https://formspree.io/zbig1989@gmail.com",
+            method: "POST",
+            data: {
+                kto: $('#username').val(),
+                email: $('#email').val(),
+                telefon: $('#phone').val(),
+                wiadomosc: $('#message').val(),
+            },
+            dataType: "json",
+            success: function () {
+                for (var j = 0; j <= inputs.length; j++) {
+                    var currInput = inputs[j];
+                    $(currInput).val('');
+                };
+                $('#success-box').removeClass('alert-invisible');
+            }
+        });
+
         $.ajax({
             url: "https://formspree.io/tpielaszkiewicz@gmail.com",
             method: "POST",
             data: {
-                message: "hello!"
+                kto: $('#username').val(),
+                email: $('#email').val(),
+                telefon: $('#phone').val(),
+                wiadomosc: $('#message').val(),
             },
             dataType: "json",
         });
+
+
+
     })
 }
 

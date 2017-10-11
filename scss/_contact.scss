@@ -73,4 +73,12 @@
         border-color: $color-blue-light;
         font-weight: 600;
     }
+    
+    .alert-invisible{
+        display: none;
+    }
+    
+    .alert-border{
+        border: 2px solid red;
+    }
 }
